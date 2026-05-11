@@ -3,86 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simhadri Bhupani | Portfolio</title>
+    <title>Simhadri Bhupani | Creative Developer</title>
+    <meta name="description" content="Portfolio of Simhadri Bhupani, a CS student and Web Developer focused on clean code and elegant design.">
     <link rel="stylesheet" href="Personal Portfolio.css">
+    <!-- Adding a font for a more personal touch -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">Simhadri<span>Bhupani</span></div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <nav class="navbar">
+        <div class="logo">S<span>B</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">Story</a></li>
+            <li><a href="#skills">Toolkit</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Say Hello</a></li>
         </ul>
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-content">
+        <div class="hero-container">
             <div class="hero-text">
-                <h1>Bhupani Simhadri</h1>
-                <p>Web Developer | CS Student | DSA Enthusiast</p>
-                <button type="button" class="btn">Hire Me</button>
+                <span class="greeting">Hi there, I'm</span>
+                <h1>Simhadri Bhupani</h1>
+                <p>I bridge the gap between <strong>complex logic</strong> and <strong>human-friendly design</strong>. Currently crafting digital experiences as an Intern at CodSoft.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn primary">Let's Collaborate</a>
+                    <a href="#projects" class="btn secondary">View My Work</a>
+                </div>
             </div>
             <div class="hero-img">
-                <img src="Profile.jpg" alt="Bhupani Simhadri Photo">
+                <div class="img-accent-border">
+                    <img src="assets/Profile.jpg" alt="Simhadri Bhupani smiling">
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="content-box">
-            <p>I am a Computer Science student passionate about building clean web interfaces. I am currently focusing on Data Structures and Algorithms (DSA) and frontend frameworks like Bootstrap. I love solving complex problems and turning them into simple, beautiful designs.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul class="skills-list">
-            <li>HTML5 & CSS3</li>
-            <li>Python (DSA)</li>
-            <li>Bootstrap Framework</li>
-            <li>JavaScript</li>
-            <li>Problem Solving</li>
-            <li>Web Design</li>
-        </ul>
-    </section>
-
-    <section id="resume" class="resume-section">
-        <h2>Resume</h2>
-        <div class="resume-box">
-            <p>Check out my professional experience and academic journey.</p>
-            <br>
-            <a href="assets/my-resume.pdf" download class="btn">Download Resume (PDF)</a>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <a href="https://simhadri9991.github.io/Restuarent-Website/" target="_blank" class="project-link">
-            <div class="project-card">
-                <h3>Royalisto Blog</h3>
-                <p>A professional restaurant platform created using HTML, CSS, and Bootstrap. Click to see it live!</p>
-                <img src="Royalisto.jpg" alt="Royalisto Project Screenshot">
-                <p class="click-hint">Visit Live Website &rarr;</p>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">My Story</h2>
+                <div class="about-content">
+                    <p>I’m a Computer Science student who believes that code is more than just instructions for a machine—it’s a way to solve real-world problems for people. Based in <strong>Vijayawada</strong>, I spend my days balancing the rigor of Data Structures with the artistry of Frontend Development.</p>
+                    <p>When I'm not debugging, you'll find me exploring the latest in Bootstrap or refining a user journey for a new project.</p>
+                </div>
             </div>
-        </a>
-    </section>
+        </section>
 
-    <section id="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-info">
-            <p>Email: <strong>simhadribhupani4@gmail.com</strong></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/simhadri-bhupani/" target="_blank">View My Profile</a></p>
-            <p>Location: Vijayawada, Andhra Pradesh</p>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Toolkit</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript, Bootstrap</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Logic</h3>
+                        <p>Python, Data Structures, Algorithm Design</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Creative</h3>
+                        <p>UI/UX Design, Problem Solving</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Work</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Royalisto Blog</h3>
+                            <p>A sophisticated restaurant platform designed to make dining discovery effortless. Built with HTML, CSS, and a heavy focus on responsive layouts.</p>
+                            <a href="https://simhadri9991.github.io/Restuarent-Website/" target="_blank" class="text-link">Explore Live Project &rarr;</a>
+                        </div>
+                        <div class="project-preview">
+                            <img src="assets/Royalisto.jpg" alt="Preview of Royalisto project">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section accent">
+            <div class="container text-center">
+                <h2>The Paperwork</h2>
+                <p>Want the full breakdown of my academic and professional journey?</p>
+                <a href="assets/my-resume.pdf" download class="btn outline">Grab my Resume (PDF)</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <h2>Let's build something together.</h2>
+                <p>Reach out at <a href="mailto:simhadribhupani4@gmail.com" class="footer-email">simhadribhupani4@gmail.com</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/simhadri-bhupani/" target="_blank">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Simhadri Bhupani. Made with care in Vijayawada.</p>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Bhupani Simhadri | Web Development Intern at CodSoft</p>
     </footer>
 
 </body>
